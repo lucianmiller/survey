@@ -8,7 +8,61 @@
   <script src="js/scripts.js"></script>
 </header>
 <body>
-  <h1>Survey</h1>
-  <p>Welcome to the survey!</p>
+  <div class="container">
+    <h1>Survey</h1>
+    <p>Welcome to the survey!</p>
+
+    <form id="name">
+      <div class="form-group">
+        <label for="name">What is your name?</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+    </form>
+
+    <form id="birthDay">
+      <div class="form-group">
+        <label for="born">Date of birth:</label>
+        <input id="born" class="form-conrtol" type="date">
+      </div>
+    </form>
+
+    <form id="favoriteColor">
+      <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input id="color" class="form-control" type="color">
+      </div>
+    </form>
+
+    <p>Out of these options, what is your favorite drink?</p>
+    <form id="drink">
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="lemonade">
+          Lemonade
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="soda">
+          Soda
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="water">
+          Water
+        </label>
+      </div>
+    </form>
+
+    <p>Out of these options, what is your favorite activity?</p>
+    <form id="activity">
+      <select class="form-conrtol" id="hobby">
+        <option value="1">Gaming</option>
+        <option value="2">Drawing</option>
+        <option value="3">Bird Watching</option>
+      </select>
+    </form>
+  </div>
 </body>
 </html>
